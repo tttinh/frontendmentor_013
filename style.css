@@ -3,3 +3,37 @@
     margin: 0;
     padding: 0;
 }
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: 0;
+}
+
+/* UTILITIES */
+
+.container {
+    width: min(1200px, 90vw);
+    margin: 0 auto;
+}
+
+.split {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* HEADER */
+header {
+    padding-top: 5rem;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 2rem;
+}
