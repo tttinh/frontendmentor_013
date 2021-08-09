@@ -1,39 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+:root {
+  --clr-primary: hsl(243, 87%, 12%);
+  --clr-secondary: hsl(238, 22%, 44%);
+
+  --clr-accent-blue: hsl(224, 93%, 58%);
+  --clr-accent-cyan: hsl(170, 45%, 43%);
+
+  --clr-neutral-blue: hsl(240, 75%, 98%);
+  --clr-neutral-blue: hsl(0, 0%, 75%);
+}
+
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: var(--clr-primary);
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  line-height: 1.6;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: 0;
+  text-decoration: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
 }
 
 /* UTILITIES */
 
 .container {
-    width: min(1200px, 90vw);
-    margin: 0 auto;
+  width: min(1200px, 90vw);
+  margin: 0 auto;
 }
 
 .split {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  cursor: pointer;
+  border: 1px solid var(--clr-accent-blue);
+  border-radius: 2px;
+  padding: 0.75rem 1rem 0.75rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: white;
+  background-color: var(--clr-accent-blue);
+}
+
+input[type='email'] {
+  border: 1px solid var(--clr-primary);
+  padding: 0.75rem 1rem 0.75rem;
 }
 
 /* HEADER */
 header {
-    padding-top: 5rem;
+  padding-top: 5rem;
 }
 
 .navbar ul {
-    display: flex;
+  display: flex;
 }
 
 .navbar li {
-    margin-right: 2rem;
+  margin-right: 2rem;
+}
+
+/* INTRO */
+.intro {
+  padding: 4rem 0 8rem;
+}
+
+.intro__text {
+  width: 100%;
+}
+
+.intro__text h1 {
+  font-size: 2.5rem;
+}
+
+.intro__text p {
+  font-size: 1.125rem;
+  margin: 1rem 0;
+}
+
+.intro__text input {
+  width: 320px;
+  margin-right: 1rem;
+}
+
+.intro__text button {
+    width: 200px;
+  }
+
+.intro__figure {
+  width: 100%;
 }
