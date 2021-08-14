@@ -5,6 +5,7 @@
   --clr-secondary: hsl(238, 22%, 44%);
 
   --clr-accent-blue: hsl(224, 93%, 58%);
+  --clr-accent-light-blue: hsl(224, 93%, 68%);
   --clr-accent-cyan: hsl(170, 45%, 43%);
 
   --clr-neutral-blue-1: hsl(240, 75%, 98%);
@@ -65,13 +66,17 @@ img {
 
 .btn {
   cursor: pointer;
-  border: 1px solid var(--clr-accent-blue);
+  border: none;
   border-radius: 3px;
   padding: 0.75rem 2rem 0.75rem;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   color: white;
   background-color: var(--clr-accent-blue);
+}
+
+.btn:hover {
+  background-color: var(--clr-accent-light-blue);
 }
 
 input[type='email'] {
@@ -282,6 +287,7 @@ footer {
 }
 
 .circle {
+  cursor: pointer;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -289,6 +295,11 @@ footer {
   display: grid;
   place-items: center;
   margin-left: 1rem;
+}
+
+.circle:hover {
+  border: 1px solid var(--clr-accent-light-blue);
+  color: var(--clr-accent-light-blue);
 }
 
 @media (max-width: 768px) {
@@ -326,18 +337,18 @@ footer {
   }
 
   .intro__text input {
-    width: 100%;
+    width: 80vw;
     margin-right: 0;
   }
 
   .intro__text button {
     margin-top: 1rem;
-    width: 100%;
+    width: 80vw;
   }
 
   /* PRODUCTIVE */
   .productive {
-    padding: 3rem 0;
+    padding: 3rem 0 5rem;
   }
 
   .productive .container {
@@ -377,20 +388,22 @@ footer {
   }
 
   /* EARLY ACCESS */
+  .early-access .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
   .early-access {
-    padding: 6rem 0 4rem;
-    color: var(--clr-neutral-blue-1);
-    background-color: var(--clr-secondary);
+    padding: 3rem 0 5rem;
   }
 
   .early-access__text p {
-    max-width: 510px;
-    color: var(--clr-transparent-white);
+    padding: 0 1.75rem;
+    margin-bottom: 2rem;
   }
 
   .early-access__text h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 1.125rem;
   }
 
   .early-access form {
@@ -399,63 +412,35 @@ footer {
   }
 
   .early-access form input {
-    width: 100%;
+    width: 65vw;
   }
 
   .early-access form .btn {
-    margin-top: 1rem;
+    width: 65vw;
     display: block;
+    margin: 1rem auto 0;
   }
 
   /* FOOTER */
-  footer {
-    background-color: var(--clr-primary);
-    padding: 5rem 0 4rem;
-  }
-
   .footer__logo {
-    width: 250px;
+    width: 180px;
   }
 
   .footer__info {
     margin-top: 2rem;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    color: white;
+    flex-direction: column;
   }
 
-  .contact__item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-    color: var(--clr-transparent-white);
+  .contact {
+    margin-bottom: 2rem;
   }
 
-  .contact__icon {
-    margin-right: 1rem;
-  }
-
-  .footer__links li {
-    margin-bottom: 1rem;
-  }
-
-  .footer__links a {
-    color: var(--clr-transparent-white);
+  .footer__links {
+    margin-bottom: 2rem;
   }
 
   .socials {
-    display: flex;
-    align-items: center;
+    align-self: center;
   }
 
-  .circle {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 1px solid var(--clr-transparent-white);
-    display: grid;
-    place-items: center;
-    margin-left: 1rem;
-  }
 }
