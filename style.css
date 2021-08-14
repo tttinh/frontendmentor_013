@@ -387,9 +387,14 @@ footer {
     margin-bottom: 2em;
   }
 
-  .intro-email,
-  .intro-form button {
-    width: min(400px, 100%);
+  .intro-form {
+    flex-direction: column;
+    padding: 0 1.25rem;
+  }
+
+  .intro-form .btn {
+    width: 100%;
+    margin-left: 0;
   }
 
   /* PRODUCTIVE */
@@ -452,9 +457,14 @@ footer {
     font-size: 1.125rem;
   }
 
-  .action-email,
-  .action-form button {
-    width: min(400px, 100%);
+  .action-form {
+    width: 100%;
+    max-width: 450px;
+    padding: 0 3.5rem;
+  }
+  
+  .action-form .btn {
+    width: 100%;
   }
 
   /* FOOTER */
