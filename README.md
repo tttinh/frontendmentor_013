@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://your-solution-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/fylo-landing-page-with-two-column-layout-PPul377Dv)
 - [Live Site URL](https://tttinh.github.io/frontendmentor_013/)
 
 ## My process
