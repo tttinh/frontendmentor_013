@@ -7,6 +7,7 @@
   --clr-accent-blue: hsl(224, 93%, 58%);
   --clr-accent-light-blue: hsl(224, 93%, 68%);
   --clr-accent-cyan: hsl(170, 45%, 43%);
+  --clr-accent-light-cyan: hsl(170, 45%, 53%);
 
   --clr-neutral-blue-1: hsl(240, 75%, 98%);
   --clr-neutral-blue-2: hsl(0, 0%, 75%);
@@ -216,12 +217,20 @@ header {
   border-bottom: 1px solid var(--clr-accent-cyan);
 }
 
+.productive__link a:hover {
+  color: var(--clr-accent-light-cyan);
+}
+
 .arrow {
   display: inline-block;
   width: 16px;
   height: 16px;
   background-image: url('images/icon-arrow.svg');
   vertical-align: middle;
+}
+
+.productive__link a:hover .arrow {
+  background-image: url('images/icon-light-arrow.svg');
 }
 
 .card {
@@ -462,7 +471,7 @@ footer {
     max-width: 450px;
     padding: 0 3.5rem;
   }
-  
+
   .action-form .btn {
     width: 100%;
   }
